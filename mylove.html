@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Ayang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://i.postimg.cc/W1Ps5rjZ/love.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8d7da, #fce4ec);
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .btn-love {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Musik dari GitHub -->
+  <audio autoplay loop>
+    <source src="https://github.com/ghazyal/ed-photograph/raw/refs/heads/main/Ed%20Sheeran%20-%20Photograph%20(Official%20Lyric%20Video)_2.mp3" type="audio/mpeg">
+    Browser ayaang tidak mendukung audio.
+  </audio>
+
+  <img src="https://i.postimg.cc/t4tPShPH/mochi-mochi-peach-cat-cat.gif" class="img-fluid"><br><br><br>
+  <p class="fw-bold">Klik suratnya yaang</p>
+  
+  <button class="btn" onclick="ungkapPerasaan()"><img src="https://i.postimg.cc/9FyDXcQG/love-letter.png" width="70"></button>
+
+  <script>
+    function ungkapPerasaan() {
+      Swal.fire({
+        title: 'Happy Anniversary yang ke-2 Tahun! 🎉❤️',
+        html: `
+          <p>Ayang timakaci karena udah tetap bertahan sejauh ini sama aku. Tanggal 14 Juni bukan sekadar tanggal, tapi pengingat bahwa kita pernah memilih satu sama lain — dan aku masih memilih ayang sampai sekarang.</p>
+          <p>Aku bukan orang yang pandai ngomong soal perasaan. Tapi semua hal pertama yang paling berkesan dalam hidup aku, aku alamin bareng ayang — dan itu gak akan pernah aku anggap biasa.</p>
+          <p>Aku bertahan karena ayang. Karena ayaang udah jadi bagian penting dalam hidup aku yang gak bisa diganti siapa pun.</p>
+          <p>Aku sadar, aku emang gak segentle orang lama ayaang. Aku pernah bikin ayaang kecewa, apalagi soal ayaang yang selalu khawatirin aku setiap saat. Tapi jujur, aku rindu banget sifat ayaang yang itu.</p>
+          <p>Aku kangen ayaang yang dulu... yang manja, yang cerewet, yang selalu nanyain aku udah makan atau belum, udah tidur atau belum. Sekarang, rasanya beda, aku ngerasa kehilangan sisi ayaang yang itu.</p>
+          <p>Maaf yaa... aku pernah nyakitin ayaang sampai ayaang ngurangin rasa sayang ke aku. Aku bener-bener nyesel. Aku mohon, bisakah ayaang kembali seperti dulu? Aku kangen ayaang — versi ayaang yang penuh perhatian itu.</p>
+          <p>Aku cuma pengen liat lagi ayang kayak dulu, saling sayang, saling jaga, saling butuh. Aku cinta sama ayaang. Banget.</p>
+        `,
+        icon: 'heart',
+        confirmButtonText: '❤️ Aku Sayang Ayaang ❤️'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            window.open('https://www.youtube.com/watch?v=KKQl-pIRQMY', '_blank');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
